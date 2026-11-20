@@ -215,3 +215,34 @@ h1,h2{font-weight:400}
   .research-direction#health .research-direction-image img { max-width:260px; }
   .research-direction--text-only { display:block; }
 }
+
+
+/* === Home research directions & group portraits (November 2026) === */
+/* Four homepage directions: two well-spaced columns on desktop. */
+.focus-grid--four { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 30px; row-gap: 32px; }
+.focus-grid--four a { min-width: 0; padding: 6px 26px 24px; border-left: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.focus-grid--four a:nth-child(odd) { padding-left: 0; border-left: 0; }
+.focus-grid--four a:nth-child(even) { padding-right: 0; }
+.focus-grid--four a:nth-child(n+3) { border-bottom: 0; padding-bottom: 0; }
+.focus-grid--four a h3 { font-size: 23px; }
+
+/* Team profiles: biography on the left, supplied portrait on the right. */
+.member-profile { display:grid; grid-template-columns:minmax(0, 1fr) 205px; gap:28px; align-items:start; }
+.member-details { min-width:0; }
+.member-profile .bio-title { font-size:29px; line-height:1.22; margin:0 0 8px; }
+.member-profile .bio-role { line-height:1.7; }
+.member-profile p { margin-bottom:15px; }
+.member-photo { display:block; width:100%; aspect-ratio:4 / 5; height:auto; object-fit:cover; object-position:center 36%; border:1px solid var(--line); background:var(--cloud); border-radius:3px; }
+
+@media (max-width:740px) {
+ .focus-grid--four { grid-template-columns:1fr; gap:19px; }
+ .focus-grid--four a,.focus-grid--four a:nth-child(odd),.focus-grid--four a:nth-child(even),.focus-grid--four a:nth-child(n+3) { border-left:0; border-bottom:1px solid var(--line); padding:0 0 18px; }
+ .focus-grid--four a:last-child { border-bottom:0; padding-bottom:0; }
+ .member-profile { grid-template-columns:minmax(0,1fr) 135px; gap:18px; }
+ .member-profile .bio-title { font-size:24px; }
+ .member-photo { aspect-ratio:3 / 4; }
+}
+@media (max-width:420px) {
+ .member-profile { grid-template-columns:1fr; }
+ .member-photo { grid-row:1; width:180px; max-width:70%; aspect-ratio:4 / 5; }
+}

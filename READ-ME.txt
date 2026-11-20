@@ -1,0 +1,14 @@
+E-ACHE Lab website update (home research directions + group member photos)
+
+Upload ONLY these files to the matching locations in your GitHub Pages repository:
+- index.html                       -> repository root
+- group-members.html              -> repository root
+- assets/style.css                -> assets folder (replace existing)
+- assets/eleni-dovrou.jpg         -> assets folder (new)
+- assets/elmpiona-chalili.jpg     -> assets folder (new)
+
+Do not upload the ZIP as a ZIP. Extract it, then select the HTML files and the assets folder together. Preserve the assets/ subfolder. Commit the changes. The rest of the website is unchanged.
+
+EDIT TEXT in GitHub by opening index.html or group-members.html, clicking the pencil icon, then changing the words between HTML tags. Search for 'OUR RESEARCH' or 'Elmpiona Chalili' to locate these sections.
+
+EDIT PHOTOS by changing each member-photo src= filename in group-members.html and uploading the replacement photo into assets/.
