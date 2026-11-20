@@ -1,0 +1,17 @@
+# E-ACHE Lab: update only these website files
+
+Upload the following 7 files to the ROOT of the same `elenidovrouuoc.github.io` repository, preserving the `assets` folder:
+
+- `index.html` — homepage now uses `assets/home-research-overview.png` instead of the old SVG.
+- `research.html` — three research images beside Directions 01–03; Direction 04 intentionally has no image. The old research-introduction SVG is no longer referenced. Text follows the supplied updated version.
+- `assets/style.css` — existing theme preserved, with responsive image layout added.
+- `assets/home-research-overview.png`
+- `assets/research-wildfires.png`
+- `assets/research-health.png`
+- `assets/research-molecular-reactions.png`
+
+**GitHub instructions**: From the repository choose **Add file → Upload files**, drag `index.html`, `research.html`, and the entire `assets` folder from this folder. Click **Commit changes**. GitHub will replace matching files. Don't delete your other pages or other files in `assets`.
+
+**Important**: These files preserve the provided wording for all four research directions; text is not spellchecked or rewritten. Images link to full-size versions when clicked. No images are supplied for Direction 04.
+
+To replace an image later, you can overwrite its PNG in `assets` using the same filename, or edit the `src="assets/..."` path in the relevant HTML. If the update doesn't appear, use Cmd+Shift+R to refresh.
