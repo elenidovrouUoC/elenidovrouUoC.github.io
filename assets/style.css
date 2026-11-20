@@ -26,7 +26,7 @@ a:focus-visible,button:focus-visible{outline:3px solid #75a5a4;outline-offset:3p
 .head-top{min-height:140px;display:flex;align-items:center;justify-content:space-between;gap:35px;padding:26px 0}
 .identity{display:flex;align-items:center;gap:20px;color:var(--ink);text-decoration:none;min-width:0}
 .identity:hover{color:var(--ink)}
-.lab-symbol{width:66px;height:66px;flex:0 0 66px}
+.lab-symbol{width:96px;height:96px;flex:0 0 96px;object-fit:contain}
 .identity-text{display:flex;flex-direction:column;gap:5px}
 .identity-text strong{font-family:var(--serif);font-weight:400;font-size:35px;line-height:1.07;letter-spacing:-1px}
 .identity-text small{font-size:12px;line-height:1.56;color:var(--quiet);letter-spacing:.1px}
@@ -36,9 +36,9 @@ a:focus-visible,button:focus-visible{outline:3px solid #75a5a4;outline-offset:3p
 .head-contact a{text-decoration:none}
 .main-nav{border-top:1px solid var(--line)}
 .nav-inner{display:flex;align-items:center;justify-content:flex-start;flex-wrap:wrap;gap:0}
-.main-nav a{padding:15px 21px;position:relative;font-size:12px;letter-spacing:.035em;font-weight:600;text-decoration:none;color:#43494a;transition:color .2s ease}
+.main-nav a{padding:15px 16px;position:relative;font-size:12px;letter-spacing:.035em;font-weight:600;text-decoration:none;color:#43494a;transition:color .2s ease}
 .main-nav a:first-child{padding-left:0}
-.main-nav a:after{content:"";height:2px;position:absolute;left:21px;right:21px;bottom:7px;background:transparent}
+.main-nav a:after{content:"";height:2px;position:absolute;left:16px;right:16px;bottom:7px;background:transparent}
 .main-nav a:first-child:after{left:0}
 .main-nav a:hover,.main-nav a[aria-current="page"]{color:var(--dark-green)}
 .main-nav a[aria-current="page"]:after{background:var(--dark-green)}
@@ -157,7 +157,7 @@ h1,h2{font-weight:400}
 @media(max-width:950px){.head-top{min-height:130px}.head-contact{display:none}.home-hero{gap:42px}.hero-copy h1{font-size:52px}.hero-subtitle{font-size:18px}.page-two-col{gap:38px;grid-template-columns:minmax(0,1fr) 190px}.contact-layout{gap:45px}.main-nav a{padding-inline:13px}.main-nav a:after{left:13px;right:13px}}
 @media(max-width:740px){
  .shell{width:min(100% - 36px,520px)}
- .head-top{min-height:106px;padding:18px 0}.lab-symbol{height:46px;width:46px;flex-basis:46px}.identity{gap:11px}
+ .head-top{min-height:106px;padding:18px 0}.lab-symbol{height:65px;width:65px;flex-basis:65px}.identity{gap:11px}
  .identity-text strong{font-size:26px;letter-spacing:-.7px}.identity-text small{font-size:9px;line-height:1.5;max-width:270px}
  .menu-button{display:inline-flex;gap:8px;align-items:center;flex:0 0 auto}
  .main-nav{display:none}.main-nav.is-open{display:block}.nav-inner{display:flex;flex-direction:column;align-items:stretch;padding:7px 0 13px}
@@ -180,3 +180,8 @@ h1,h2{font-weight:400}
  .footer-inner{display:block;padding-top:29px;padding-bottom:26px}.footer-inner>div:last-child{text-align:left;margin-top:24px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+/* Projects: reuse the existing research card style in its dedicated page. */
+.projects-page{padding-top:50px;padding-bottom:85px}
+.projects-page .content-section{max-width:900px}
+.projects-page .closing-line{margin-top:38px}
