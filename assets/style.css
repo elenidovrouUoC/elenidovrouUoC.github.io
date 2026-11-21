@@ -246,3 +246,9 @@ h1,h2{font-weight:400}
  .member-profile { grid-template-columns:1fr; }
  .member-photo { grid-row:1; width:180px; max-width:70%; aspect-ratio:4 / 5; }
 }
+
+/* Hide the large page headings on all tabs */
+.page-heading h1 {
+    display: none;
+}
+
