@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://elenidovrouuoc.github.io/sitemap.xml
